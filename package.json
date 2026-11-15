@@ -1,0 +1,19 @@
+{
+  "name": "guild-bridge",
+  "version": "1.0.0",
+  "description": "Hypixel guild <-> Discord bridge with in-game Bedwars commands",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "pm2:start": "pm2 start src/index.js --name guild-bridge",
+    "pm2:kill": "pm2 delete guild-bridge"
+  },
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "@napi-rs/canvas": "^0.1.60",
+    "discord.js": "^14.16.0",
+    "dotenv": "^16.4.5",
+    "mineflayer": "^4.23.0"
+  }
+}
