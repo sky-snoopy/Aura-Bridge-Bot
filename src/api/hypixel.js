@@ -88,7 +88,7 @@ function resolveRank(p) {
 }
 
 const profileCache = new Map();
-const PROFILE_TTL = 5 * 60 * 1000;
+const PROFILE_TTL = 60 * 60 * 1000;
 
 /** Rank, plus color and guild rank for the chat image. Returns null if the player doesn't exist. */
 export async function getChatProfile(name) {
